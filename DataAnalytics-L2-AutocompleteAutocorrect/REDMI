@@ -1,1 +1,104 @@
+# SK 5 · Autocomplete and Autocorrect Data Analytics
+
+## Overview
+
+This project analyses the efficiency and accuracy of **autocomplete** and **autocorrect** algorithms using Natural Language Processing (NLP) techniques.
+
+The project uses a real text corpus from **Project Gutenberg** and implements multiple approaches for next-word prediction and spelling correction.
+
+## Objectives
+
+* Collect and preprocess a large text corpus.
+* Build frequency-based **Bigram and Trigram** language models.
+* Implement autocomplete using word context and character prefixes.
+* Implement spelling correction using **Levenshtein edit distance** and `pyspellchecker`.
+* Evaluate autocomplete and autocorrect performance using accuracy, precision, and recall.
+* Compare different approaches.
+* Visualise word frequencies and autocorrect results.
+* Discuss limitations compared with production systems such as Google Keyboard.
+
+## Dataset
+
+The project uses the **Project Gutenberg corpus provided through NLTK**.
+
+The corpus contains multiple public-domain books and provides a large collection of English text for training and evaluation.
+
+## NLP Preprocessing
+
+The text is processed using the following steps:
+
+1. Tokenisation
+2. Lowercasing
+3. Punctuation and non-alphabetic character removal
+4. Stopword removal for the general NLP analysis
+5. Construction of frequency distributions and n-grams
+
+## Autocomplete
+
+Two frequency-based language models are implemented:
+
+* **Bigram model** – predicts the next word based on the previous word.
+* **Trigram model** – predicts the next word based on the previous two words.
+
+The notebook also evaluates **character-prefix autocomplete** using at least 10 different prefixes and displays the top 3 predictions for each prefix.
+
+## Autocorrect
+
+Two spelling-correction approaches are evaluated:
+
+* **PySpellChecker**
+* **Custom Levenshtein distance with word-frequency ranking**
+
+The autocorrect models are tested using more than 20 deliberately misspelled words.
+
+## Evaluation
+
+The project evaluates the models using:
+
+* Accuracy
+* Precision
+* Recall
+
+For autocomplete, Precision@1, Recall@1, Precision@3, and Recall@3 are used.
+
+The results are also compared between the implemented approaches.
+
+## Visualisations
+
+The notebook includes:
+
+* Bar chart of the **Top 20 most frequent words**
+* Confusion matrices for the autocorrect approaches
+* Evaluation tables comparing model performance
+
+## Technologies
+
+* Python
+* pandas
+* NLTK
+* pyspellchecker
+* textdistance
+* collections
+* matplotlib
+* scikit-learn
+* Jupyter Notebook / Google Colab
+
+## How to Run
+
+1. Open `SK5_Autocomplete_Autocorrect_FIXED.ipynb` in **Google Colab**.
+2. Restart the runtime/session if necessary.
+3. Run all cells from top to bottom using **Runtime → Run all**.
+4. The notebook automatically installs the required packages and downloads the required NLTK resources.
+5. Review the generated tables, metrics, charts, and confusion matrices.
+
+## Project Structure
+
+```text
+SK5_Autocomplete_Autocorrect_FIXED.ipynb
+README.md
+```
+
+## Conclusion
+
+This project demonstrates how traditional frequency-based NLP techniques can be used to build autocomplete and autocorrect systems. The results also highlight the limitations of simple statistical approaches compared with modern production systems such as Google Keyboard, which use larger datasets, contextual models, personalised information, and more advanced machine-learning techniques.
 

@@ -1,32 +1,60 @@
-# OIBSIP
-Data Analytics Internship Projects for AICTE Oasis Infobyte Virtual Internship Program (OIBSIP).
-# AICTE Oasis Infobyte Virtual Internship (OIBSIP) - Data Analytics
+### Oasis Infobyte Virtual Internship Program (OIBSIP) - Data Analytics
 
-This repository contains the official project submissions completed during the **AICTE Oasis Infobyte Data Analytics Virtual Internship Program (OIBSIP)**. The program is designed to provide practical industry-level exposure and rigorous skill development through structured, self-paced analytical tasks.
+Welcome to my official repository for the **Data Analytics Internship Projects** completed during the **AICTE Oasis Infobyte Virtual Internship Program (OIBSIP)**. This repository serves as a comprehensive portfolio showcasing various data analytics, machine learning, and data preprocessing tasks split across different difficulty levels. 
 
----
+### 💡 Repository Structure & Code Walkthrough
 
-## 📈 Executive Summary of Completed Tasks
+[!IMPORTANT]
+**How to navigate the projects:**
+Inside each project folder listed below, you will find two files: 
 
-### 📊 Task 1: Exploratory Data Analysis (EDA) on Retail Sales
-*   **Directory:** `DataAnalytics-L1-EDARetailSales/`
-*   **Objective:** Conducted a comprehensive exploratory analysis on a retail sales dataset to track customer buying patterns, demographic impacts, and seasonal variations.
-*   **Methodology & Key Deliverables:** Cleaned data structures, extracted descriptive statistics, and generated monthly/quarterly line charts, demographic bar charts, and a correlation matrix heatmap using `pandas`, `matplotlib`, and `seaborn`.
+1. A dedicated folder structure containing an empty or template layout.
+2. **An integrated code notebook/file containing embedded documentation.** The markdown and explanations are baked directly into the code file to provide a strict, **code-by-code structural workflow overview**, ensuring every line of analysis is deeply explained in context.
 
-### 👥 Task 2: Customer Segmentation Analysis (RFM Model)
-*   **Directory:** `DataAnalytics-L1-CustomerSegmentation/`
-*   **Objective:** Segmented the active user base of an e-commerce platform into distinct behavioral groups to optimize marketing resource allocation.
-*   **Methodology & Key Deliverables:** Engineered **Recency, Frequency, and Monetary (RFM)** variables. Log-transformed and scaled the data using `StandardScaler`. Implemented the **K-Means Clustering** algorithm, optimized via the **Elbow Method (K=4)**, and delivered data-driven recommendations for core VIP, at-risk, and occasional buyer personas.
+### 📁 Internship Projects Directory
 
-### 🧹 Task 3: Professional Data Cleaning & Quality Audit
-*   **Directory:** `DataAnalytics-L1-DataCleaning/`
-*   **Objective:** Demonstrated end-to-end data auditing and cleansing skills by taking a compromised raw dataset and transforming it into an analysis-ready matrix.
-*   **Methodology & Key Deliverables:** Implemented median imputation for skewed numerical nulls, mode imputation for categorical gaps, and removed redundant duplicate rows. Isolated and treated extreme financial outliers using the **Interquartile Range (IQR) method** and presented a strict **Before vs. After Data Quality Audit Table**.
+The projects are organized sequentially into levels representing different analytical milestones: 
 
----
+### 🔹 Level 1: Foundation & Exploratory Data Analysis (EDA)
 
-## 🛠️ Tech Stack & Skills Demonstrated
-*   **Programming Language:** Python 3
-*   **Core Libraries:** Pandas, NumPy, Scikit-Learn, Seaborn, Matplotlib
-*   **Methodologies:** Exploratory Data Analysis (EDA), RFM Segmentation, Unsupervised Machine Learning (K-Means), Data Purifying, Statistical Imputation, Outlier Capping
-*   **Version Control:** Git & GitHub
+* **DataAnalytics-L1-CustomerSegmentation** 
+
+  * Advanced customer profiling using clustering techniques to segment user bases for targeted marketing campaigns.
+* **DataAnalytics-L1-DataCleaning** 
+
+  * Rigorous data preprocessing, handling missing values, removing anomalies, and structuring raw datasets into usable pipelines.
+* **DataAnalytics-L1-FDARetailSales** 
+
+  * Full exploratory data analysis on retail datasets to detect sales trends, consumer behavior patterns, and seasonal fluctuations.
+* **DataAnalytics-L1-SentimentAnalysis** 
+
+  * Natural Language Processing (NLP) text processing pipeline designed to classify textual reviews and user feedback into sentiments.
+
+### 🔸 Level 2: Advanced Analytics & Predictive Modeling
+
+* **DataAnalytics-L2-AutocompleteAutocorrect** 
+
+  * Implementation of text predictive algorithms leveraging string distance metrics and probabilistic n-gram models.
+* **DataAnalytics-L2-FraudDetection** 
+
+  * Machine learning classification models optimized to deal with highly imbalanced data for detecting fraudulent financial activities.
+* **DataAnalytics-L2-GooglePlayStoreAnalysis** 
+
+  * Metric extraction, performance evaluations, and actionable insights gathered from a large index of app store data.
+* **DataAnalytics-L2-PredictingHousePrices** 
+
+  * End-to-end regression framework utilizing advanced engineering features to accurately predict real estate values.
+* **DataAnalytics-L2-WineQualityPrediction** 
+
+  * Supervised learning evaluation models examining chemical properties to predict beverage quality metrics.
+
+### 🛠️ Tech Stack & Key Libraries Used
+
+* **Languages:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+* **Machine Learning:** Scikit-Learn
+
+### 📝 License
+
+This project is open-source and licensed under the terms of the **MIT License**.
